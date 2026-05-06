@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Scan QRCODE Personel</title>
+    <style>
+        :root {
+            --kemnaker-blue: #004a80;
+            --kemnaker-dark-blue: #00335c;
+            --bg-gray: #e0e0e0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--kemnaker-blue);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Section */
+        header {
+            background-color: var(--kemnaker-blue);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-placeholder {
+            width: 50px;
+            height: 50px;
+            background: white; /* Ganti dengan gambar logo asli */
+            mask: url('https://upload.wikimedia.org/wikipedia/commons/b/b1/Logo_Kemnaker.png') no-repeat center;
+            mask-size: contain;
+        }
+
+        .header-text {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .menu-icon {
+            border: 1px solid white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        main {
+            background-color: var(--bg-gray);
+            flex-grow: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #555;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 8px solid var(--kemnaker-blue);
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            max-width: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            background-color: var(--kemnaker-dark-blue);
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .card-body {
+            padding: 20px;
+            color: #000;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 240px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            margin-bottom: 15px;
+        }
+
+        .info-row {
+            margin-bottom: 8px;
+        }
+
+        .label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .value {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--kemnaker-blue);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-logos {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .footer-logo-item {
+            height: 40px;
+            filter: brightness(1.2);
+        }
+
+        .address {
+            font-size: 13px;
+            line-height: 1.4;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-placeholder"></div>
+            <div class="header-text">KEMENTERIAN<br>KETENAGAKERJAAN<br>REPUBLIK INDONESIA</div>
+        </div>
+        <div class="menu-icon">
+            <svg width="30" height="30" viewBox="0 0 30 30">
+                <path stroke="white" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <h1>Hasil Scan QRCODE Personel</h1>
+
+        <div class="card">
+            <div class="card-header">BIODATA AHLI</div>
+            <div class="card-body">
+                <img src="https://via.placeholder.com/180x240" alt="Foto Personel" class="profile-img">
+                
+                <div class="info-row">
+                    <span class="label">Nama :</span>
+                    <span class="value">DANI</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Tempat & Tanggal Lahir :</span>
+                    <span class="value">Samboja, 30 September 1987</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Jenis Personal :</span>
+                    <span class="value">Operator</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Jenis Alat :</span>
+                    <span class="value">Padestal Crane</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Klasifikasi :</span>
+                    <span class="value">Alat Berat</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Kelas :</span>
+                    <span class="value">1</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">No. Registrasi :</span>
+                    <span class="value">0451899126/A-OPC1/32/VIII/2026</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Masa Berlaku :</span>
+                    <span class="value">19 April 2031</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-logos">
+            <div style="color: #4caf50; font-weight: bold; font-size: 10px;">UTAMAKAN K3</div>
+            <div style="color: #fff; font-weight: bold; font-size: 10px;">INDONESIA MAJU</div>
+            <div style="color: #fff; font-weight: bold; font-size: 10px;">ASEAN 2023</div>
+        </div>
+        <p class="address">
+            Jl. Jenderal Gatot Subroto Kav. 51, Daerah Khusus Ibukota Jakarta 12750, Indonesia
+        </p>
+    </footer>
+
+</body>
+</html>
